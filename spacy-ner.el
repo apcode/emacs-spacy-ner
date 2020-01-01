@@ -48,7 +48,8 @@
 Special commands:
 \\{spacy-ner-mode-map}"
   (interactive)
-  (let ((ner-file (read-file-name "Enter ner training file: ")))
+  (let ((ner-file (read-file-name "Enter ner training file: "))
+        (inhibit-read-only t))
     (switch-to-buffer (format "*-Spacy-NER-%s-*" (file-name-base ner-file)))
     ;;    (spacy-ner-mode)
     (erase-buffer)
