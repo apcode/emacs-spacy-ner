@@ -209,9 +209,9 @@ Special commands:
     (ov-clear over)))
 
 
-;; (defvar spacy-ner-mode-map nil
-;;   "Keymap for spacy-ner-mode.")
-(setq spacy-ner-mode-map nil)
+(defvar spacy-ner-mode-map nil
+  "Keymap for spacy-ner-mode.")
+
 
 (if spacy-ner-mode-map
     nil
