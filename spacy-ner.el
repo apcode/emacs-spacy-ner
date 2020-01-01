@@ -219,10 +219,11 @@ Special commands:
   (define-key spacy-ner-mode-map (kbd "C-x C-w") 'spacy-write)
   (define-key spacy-ner-mode-map (kbd "C-c l") 'spacy-label)
   (define-key spacy-ner-mode-map (kbd "C-c n") 'spacy-label-n)
+  (define-key spacy-ner-mode-map (kbd "C-c m") 'spacy-label-matches)
   (define-key spacy-ner-mode-map (kbd "C-M-<right>") 'forward-label)
   (define-key spacy-ner-mode-map (kbd "C-M-<left>") 'backward-label)
-  (define-key spacy-ner-mode-map (kbd "C-c M-<right>") 'forward-label-at)
-  (define-key spacy-ner-mode-map (kbd "C-c M-<left>") 'backward-label-at)
+  (define-key spacy-ner-mode-map (kbd "C-M-S-<right>") 'forward-label-at)
+  (define-key spacy-ner-mode-map (kbd "C-M-S-<left>") 'backward-label-at)
   ;; label specific bindings
   (define-key spacy-ner-mode-map (kbd "C-c 1") (lambda ()
                                                  (interactive)
