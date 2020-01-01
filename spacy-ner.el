@@ -200,6 +200,7 @@ Special commands:
 
 (defun spacy-label-matches ()
   "Create labels for all matching text."
+  (interactive)
   (let* ((over (ov-at))
          (text (buffer-substring (ov-beg over) (ov-end over))))
     (ov-set text 'face (ov-val over 'face) 'label (ov-val over 'label))

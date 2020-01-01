@@ -1,4 +1,4 @@
 {"text": "Google is based in Mountain View", "spans": [{"start": 0, "end": 6, "label": "ORG"}, {"start": 19, "end": 32, "label": "LOC"}]}
-{"text": "Alan is cool", "spans": [{"start": 0, "end": 4, "label": "PERSON"}]}
+{"text": "Alan is a person", "spans": [{"start": 0, "end": 4, "label": "PERSON"}]}
 {"text": "some other text"}
 {"text": "some other Google text"}
