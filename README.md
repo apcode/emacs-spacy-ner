@@ -82,3 +82,10 @@ The label list should look like:
           ("PERSON" . "#873600")
          )
         "Stores list of assoc pairs: (label . color).")
+
+## TODO
+
+- Train spacy model on current buffer. Display performance in temp buffer.
+- Apply spacy model's labels to current buffer text.
+- Iterative functionality to continually train and update labels from spacy model.
+  - label -> train -> update labels from model.

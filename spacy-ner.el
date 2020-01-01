@@ -51,6 +51,7 @@ Special commands:
   (let ((ner-file (read-file-name "Enter ner training file: ")))
     (switch-to-buffer (format "*-Spacy-NER-%s-*" (file-name-base ner-file)))
     ;;    (spacy-ner-mode)
+    (erase-buffer)
     (setq major-mode 'spacy-ner-mode)
     (setq mode-name "Spacy-NER")
     (run-hooks 'spacy-ner-mode-hook)
