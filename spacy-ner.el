@@ -35,7 +35,7 @@
           (insert (format "%d %s" i (car label)))
           (ov start (point) 'face (list :background (cdr label)))
           (newline))
-        (setq i (+ i 1))))))
+        (setq i (1+ i))))))
 
 
 (defvar spacy-ner-mode-hook nil
@@ -102,7 +102,7 @@ Special commands:
         (lines (split-string (buffer-string) "\n" t)))
     (with-temp-file filename
       (dolist (line lines)
-        (setq offbeg (+ offend 1)
+        (setq offbeg (1+ offend)
               offend (+ offbeg (length line)))
         (let* ((over (car overlays))
                (spans 0))
