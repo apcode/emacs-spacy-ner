@@ -12,6 +12,8 @@
 ;; table of property lists for labels
 ;; label=name, bg=background color, char=C-c char keybinding
 ;; see the keymap bindings further down in this file.
+;;
+;; WARNING Please add your key binding to the keymap around line 112
 (defvar spacy--label-properties
   '(
     (label "ORG" bg "#7B241C" char \o)
@@ -32,6 +34,7 @@
     (label "MATERIAL" bg "#795548" char \x)
     (label "COLOR" bg "#757575" char \u)
     (label "MEASURE" bg "#546E7A" char \v)
+    (label "OCCUPATION" bg "#D5D8DC" char \w)
     )
   "Stores list of NER labels and colors.")
 
@@ -106,6 +109,7 @@
   (spacy-define-key-label "MATERIAL")
   (spacy-define-key-label "COLOR")
   (spacy-define-key-label "MEASURE")
+  (spacy-define-key-label "OCCUPATION")
   )
 
 (defun spacy-ner ()
