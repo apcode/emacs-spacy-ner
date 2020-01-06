@@ -54,8 +54,8 @@ The mode opens a new buffer with the NER view of the text in the input file.
 `spacy-label-matches [C-c m]`
 : Apply the label the point is in to all text. All cases of the label's text have the current label applied, i.e. if the string "Google" is labelled as "ORG", then this command will apply the "ORG" label to all cases of the string "Google" in the buffer.
 
-`[C-c 1..n]`
-: `C-c 1` applies label number 1, `C-c 2` label 2 etc. The number from 1 to n are the label numbers in the list.
+`[C-c <label-key>]`
+: Each label has a key that with `C-c` calls `spacy-label "LABEL"`. So this provides an easy shortcut to apply any label to the current marked region.
 
 `spacy-clear [C-c x]`
 : Delete all labels in the buffer
